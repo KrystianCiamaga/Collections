@@ -1,5 +1,8 @@
 package pl.kciamaga.java8desktop;
 
+
+import static pl.kciamaga.java8desktop.StringUtils.toDouble;
+
 public class Defibrillator {
 
 
@@ -16,8 +19,8 @@ public class Defibrillator {
         defibrillator.name = tokens[1];
         defibrillator.address = tokens[2];
         defibrillator.phoneNumber = tokens[3];
-        defibrillator.location = new Point(Solution.toDouble(tokens[4]),
-                Solution.toDouble(tokens[5]));
+        defibrillator.location = new Point(toDouble(tokens[4]),
+                toDouble(tokens[5]));
         return defibrillator;
     }
 
