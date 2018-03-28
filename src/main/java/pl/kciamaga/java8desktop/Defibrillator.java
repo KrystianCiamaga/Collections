@@ -12,7 +12,7 @@ public class Defibrillator {
     private String phoneNumber;
     private Point location;
 
-    static Defibrillator createDefibrillator(String description) {
+    public static Defibrillator createDefibrillator(String description) {
         String[] tokens = description.split(";");
         Defibrillator defibrillator = new Defibrillator();
         defibrillator.number = Integer.parseInt(tokens[0]);
