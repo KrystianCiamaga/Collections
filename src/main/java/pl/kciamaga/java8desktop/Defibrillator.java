@@ -1,8 +1,11 @@
 package pl.kciamaga.java8desktop;
 
 
+import lombok.Data;
+
 import static pl.kciamaga.java8desktop.StringUtils.toDouble;
 
+@Data
 public class Defibrillator {
 
 
@@ -24,43 +27,4 @@ public class Defibrillator {
         return defibrillator;
     }
 
-    public int getNumber() {
-        return number;
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public Point getLocation() {
-        return location;
-    }
-
-    public void setLocation(Point location) {
-        this.location = location;
-    }
 }
