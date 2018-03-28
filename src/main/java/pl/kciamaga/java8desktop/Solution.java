@@ -34,20 +34,20 @@ public class Solution {
         Defibrillator nearest=findNearest(user,defibrillators);
 
 
-        System.out.println(nearest.name);
+        System.out.println(nearest.getName());
     }
 
     private static Defibrillator findNearest(User user, List<Defibrillator> defibrillators) {
 
-        double min=user.location.distanceTo(defibrillators.get(0).location);
+        double min=user.getLocation().distanceTo(defibrillators.get(0).getLocation());
 
         Defibrillator def = defibrillators.get(0);
 
         for(int i=1;i<defibrillators.size();i++){
 
-            if(user.location.distanceTo(defibrillators.get(i).location) < min){
+            if(user.getLocation().distanceTo(defibrillators.get(i).getLocation()) < min){
 
-                min=user.location.distanceTo(defibrillators.get(i).location);
+                min=user.getLocation().distanceTo(defibrillators.get(i).getLocation());
                 def=defibrillators.get(i);
             }
 
